@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        .image-container {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <p>This is a paragraph of text. You can use paragraphs to display blocks of text.</p>
+
+    <hr>
+
+    <h2>Links</h2>
+    <p>This is a <a href="https://www.example.com" target="_blank">link to Example.com</a>.</p>
+
+    <hr>
+
+    <h2>Images</h2>
+    <div class="image-container">
+        <img src="https://via.placeholder.com/150" alt="Placeholder Image" />
+        <p>Image with a placeholder</p>
+    </div>
+
+    <hr>
+
+    <h2>Lists</h2>
+    <h3>Ordered List</h3>
+    <ol>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ol>
+
+    <h3>Unordered List</h3>
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ul>
+
+    <hr>
+
+    <h2>Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 2</td>
+                <td>Row 1, Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+                <td>Row 2, Cell 3</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h2>Forms</h2>
+    <form action="submit_form.php" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Your Name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Your Email"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Your Password"><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <label for="hobbies">Select your hobbies:</label><br>
+        <input type="checkbox" id="hobby1" name="hobbies" value="Reading">
+        <label for="hobby1">Reading</label><br>
+        <input type="checkbox" id="hobby2" name="hobbies" value="Traveling">
+        <label for="hobby2">Traveling</label><br>
+        <input type="checkbox" id="hobby3" name="hobbies" value="Gaming">
+        <label for="hobby3">Gaming</label><br><br>
+
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <h2>Blockquote</h2>
+    <blockquote>
+        "This is a blockquote. It's used to display a section of quoted text."
+    </blockquote>
+
+    <hr>
+
+    <h2>Code</h2>
+    <p>This is a block of code:</p>
+    <pre>
+        <code>
+        function helloWorld() {
+            console.log("Hello, World!");
+        }
+        </code>
+    </pre>
+
+    <hr>
+
+    <h2>Audio</h2>
+    <audio controls>
+        <source src="audiofile.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <hr>
+
+    <h2>Video</h2>
+    <video controls width="320" height="240">
+        <source src="videofile.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+
+    <hr>
+
+    <h2>Iframes</h2>
+    <iframe src="https://www.example.com" width="300" height="200" title="Iframe Example"></iframe>
+
+</body>
+</html>
